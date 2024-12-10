@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Alumni Sans';
+    src: url(./fonts/Alumni-Sans.ttf);
+}
+
+body {
+    background-color: #000;
+    margin: 0;
+}
+
+.container {
+    padding: 0 20px;
+}
+
+.header {
+    padding: 25px 0 30px 0;
+
+    &__title {
+        color: #FFF;
+        /* text-medium */
+        text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
+        font-family: "Alumni Sans";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        text-align: center;
+        line-height: normal;
+    }
+}
+
+.ball {
+    position: relative;
+
+    &__img {
+        flex-shrink: 0;
+        filter: drop-shadow(0px 4px 70px #6969FF);
+    }
+
+    &__result {
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        position: absolute;
+        top: 98px;
+        right: 115px;
+    }
+
+    &__text {
+        position: absolute;
+        top: 137px;
+        color: #FFF;
+        text-align: center;
+        font-family: "Alumni Sans";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        max-width: 83px;
+        margin: 0;
+        left: 145px
+    }
+}
