@@ -30,7 +30,8 @@ let blacklist = [
     "с какой стати", "в чем", "насколько", "по какой причине"
 ];
 
-text.addEventListener('click', addRandomAnswer, vibrate)
+text.addEventListener('click', addRandomAnswer)
+text.addEventListener('click', vibrate)
 
 function addRandomAnswer() {
     text.textContent = answers[Math.floor(Math.random()*answers.length)]
